@@ -1,11 +1,18 @@
 /**
  * author: Zama
- * created: 07.11.2023 21:12:30
+ * created: 22.01.2024 15:52:44
  **/
 
 #include <bits/stdc++.h>
 
 using namespace std;
+
+#ifdef LOCAL
+#  include <debug_print.hpp>
+#  define debug(...) debug_print::multi_print(#__VA_ARGS__, __VA_ARGS__)
+#else
+#  define debug(...) (static_cast<void>(0))
+#endif
 
 #if __has_include(<atcoder/all>)
 #include <atcoder/all>
@@ -24,8 +31,8 @@ using vs = vector<string>;
 using pii = pair<int, int>;
 
 #define OVERLOAD_REP(_1, _2, _3, name, ...) name
-#define REP1(i, n) for (auto i = std::decay_t<decltype(n)>{}; (i) != (n); ++(i))
-#define REP2(i, l, r) for (auto i = (l); (i) != (r); ++(i))
+#define REP1(i, n) for (auto i = std::decay_t<decltype(n)>{}; (i) < (n); ++(i))
+#define REP2(i, l, r) for (auto i = (l); (i) < (r); ++(i))
 #define rep(...) OVERLOAD_REP(__VA_ARGS__, REP2, REP1)(__VA_ARGS__)
 #define all(...) std::begin(__VA_ARGS__), std::end(__VA_ARGS__)
 #define rall(...) std::rbegin(__VA_ARGS__), std::rend(__VA_ARGS__)
