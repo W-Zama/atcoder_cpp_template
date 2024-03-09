@@ -1,6 +1,6 @@
 /**
  * author: Zama
- * created: 2024.01.22 15:56:56
+ * created: 2024.03.09 17:02:25
  **/
 
 #include <bits/stdc++.h>
@@ -8,10 +8,10 @@
 using namespace std;
 
 #ifdef LOCAL
-#  include <debug_print.hpp>
-#  define debug(...) debug_print::multi_print(#__VA_ARGS__, __VA_ARGS__)
+#include <debug_print.hpp>
+#define debug(...) debug_print::multi_print(#__VA_ARGS__, __VA_ARGS__)
 #else
-#  define debug(...) (static_cast<void>(0))
+#define debug(...) (static_cast<void>(0))
 #endif
 
 #if __has_include(<atcoder/all>)
@@ -38,17 +38,73 @@ using pii = pair<int, int>;
 #define rall(...) std::rbegin(__VA_ARGS__), std::rend(__VA_ARGS__)
 
 #define pb push_back
-#define YESNO(bool) if(bool){cout<<"YES"<<"\n";}else{cout<<"NO"<<"\n";}
-#define yesno(bool) if(bool){cout<<"yes"<<"\n";}else{cout<<"no"<<"\n";}
-#define YesNo(bool) if(bool){cout<<"Yes"<<"\n";}else{cout<<"No"<<"\n";}
+#define YESNO(bool)   \
+    if (bool)         \
+    {                 \
+        cout << "YES" \
+             << "\n"; \
+    }                 \
+    else              \
+    {                 \
+        cout << "NO"  \
+             << "\n"; \
+    }
+#define yesno(bool)   \
+    if (bool)         \
+    {                 \
+        cout << "yes" \
+             << "\n"; \
+    }                 \
+    else              \
+    {                 \
+        cout << "no"  \
+             << "\n"; \
+    }
+#define YesNo(bool)   \
+    if (bool)         \
+    {                 \
+        cout << "Yes" \
+             << "\n"; \
+    }                 \
+    else              \
+    {                 \
+        cout << "No"  \
+             << "\n"; \
+    }
 
-template <typename T> inline void print(const vector<T>& v, string s = " "){rep(i, v.size()) cout << v[i] << (i != (ll)v.size() - 1 ? s : "\n");}
-template <typename T, typename S> inline void print(const pair<T, S>& p){cout << p.first << " " << p.second << "\n";}
-template <typename T> inline void print(const T& x) {cout << x << "\n";}
-template <typename T, typename S> inline void print(const vector<pair<T, S>>& v){for (auto&& p : v) print(p);}
+template <typename T>
+inline void print(const vector<T> &v, string s = " ") { rep(i, v.size()) cout << v[i] << (i != (ll)v.size() - 1 ? s : "\n"); }
+template <typename T, typename S>
+inline void print(const pair<T, S> &p) { cout << p.first << " " << p.second << "\n"; }
+template <typename T>
+inline void print(const T &x) { cout << x << "\n"; }
+template <typename T, typename S>
+inline void print(const vector<pair<T, S>> &v)
+{
+    for (auto &&p : v)
+        print(p);
+}
 
-template<class T> inline bool chmax(T& a, T b) { if (a < b) { a = b; return 1; } return 0; }
-template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return 1; } return 0; }
+template <class T>
+inline bool chmax(T &a, T b)
+{
+    if (a < b)
+    {
+        a = b;
+        return 1;
+    }
+    return 0;
+}
+template <class T>
+inline bool chmin(T &a, T b)
+{
+    if (a > b)
+    {
+        a = b;
+        return 1;
+    }
+    return 0;
+}
 
 int main()
 {
