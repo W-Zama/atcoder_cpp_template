@@ -92,7 +92,7 @@ inline bool chmin(T &a, T b) {
 }
 
 int main() {
-  int N;
+  ll N;
   cin >> N;
 
   return 0;

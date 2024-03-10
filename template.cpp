@@ -1,6 +1,6 @@
 /**
  * author: Zama
- * created: 2024.03.10 00:53:01
+ * created: 2024.03.10 14:36:30
  **/
 
 #include <bits/stdc++.h>
@@ -97,7 +97,7 @@ inline bool chmin(T &a, T b) {
 }
 
 int main() {
-  int N;
+  ll N;
   cin >> N;
 
   return 0;
