@@ -1,6 +1,6 @@
 /**
  * author: Zama
- * created: 2024.03.10 14:36:30
+ * created: 2024.03.11 11:01:55
  **/
 
 #include <bits/stdc++.h>
@@ -29,6 +29,7 @@ using vvl = vector<vl>;
 using vvll = vector<vll>;
 using vs = vector<string>;
 using pii = pair<int, int>;
+using pllll = pair<ll, ll>;
 
 #define OVERLOAD_REP(_1, _2, _3, name, ...) name
 #define REP1(i, n) for (auto i = std::decay_t<decltype(n)>{}; (i) < (n); ++(i))
@@ -36,32 +37,11 @@ using pii = pair<int, int>;
 #define rep(...) OVERLOAD_REP(__VA_ARGS__, REP2, REP1)(__VA_ARGS__)
 #define all(...) std::begin(__VA_ARGS__), std::end(__VA_ARGS__)
 #define rall(...) std::rbegin(__VA_ARGS__), std::rend(__VA_ARGS__)
-
 #define pb push_back
-#define YESNO(bool) \
-  if (bool) {       \
-    cout << "YES"   \
-         << "\n";   \
-  } else {          \
-    cout << "NO"    \
-         << "\n";   \
-  }
-#define yesno(bool) \
-  if (bool) {       \
-    cout << "yes"   \
-         << "\n";   \
-  } else {          \
-    cout << "no"    \
-         << "\n";   \
-  }
-#define YesNo(bool) \
-  if (bool) {       \
-    cout << "Yes"   \
-         << "\n";   \
-  } else {          \
-    cout << "No"    \
-         << "\n";   \
-  }
+
+inline void YESNO(bool condition) { cout << (condition ? "YES\n" : "NO\n"); }
+inline void yesno(bool condition) { cout << (condition ? "yes\n" : "no\n"); }
+inline void YesNo(bool condition) { cout << (condition ? "Yes\n" : "No\n"); }
 
 template <typename T>
 inline void print(const vector<T> &v, string s = " ") {
