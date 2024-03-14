@@ -71,6 +71,8 @@ inline bool chmin(T &a, T b) {
   return 0;
 }
 
+const long long INF = 1LL << 60;
+
 int main() {
   ll N;
   cin >> N;

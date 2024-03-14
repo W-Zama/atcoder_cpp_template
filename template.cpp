@@ -1,6 +1,6 @@
 /**
  * author: Zama
- * created: 2024.03.11 11:01:55
+ * created: 2024.03.15 01:51:03
  **/
 
 #include <bits/stdc++.h>
@@ -75,6 +75,8 @@ inline bool chmin(T &a, T b) {
   }
   return 0;
 }
+
+const long long INF = 1LL << 60;
 
 int main() {
   ll N;
