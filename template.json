@@ -34,6 +34,8 @@
             "using vs = vector<string>;",
             "using pii = pair<int, int>;",
             "using pllll = pair<ll, ll>;",
+            "// using mint = modint1000000007;",
+            "// using mint = modint998244353;",
             "",
             "#define OVERLOAD_REP(_1, _2, _3, name, ...) name",
             "#define REP1(i, n) for (auto i = std::decay_t<decltype(n)>{}; (i) < (n); ++(i))",
