@@ -1,0 +1,3 @@
+このディレクトリはVSCodeにスニペットを登録する際に必要なjsonファイルを生成するためのものです．
+
+input.cppにc++のコードを記述し，make_template.pyを実行すると，output.jsonが生成されます．
