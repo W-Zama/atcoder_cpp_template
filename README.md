@@ -23,3 +23,15 @@ VSCode などでスニペット登録しておけば，すぐに呼び出せま�
     ├── template.cpp
     └── template.json
 ```
+
+## 備忘録
+
+### atcoder-cli のテンプレート設定
+
+以下のように入力し，設定ファイルのあるディレクトリへ移動する．
+
+```bash
+cd `acc config-dir`
+```
+
+移動後，`cpp/`の中の`main.cpp`にテンプレートを記述する．
