@@ -36,13 +36,19 @@ using pllll = pair<ll, ll>;
 #define rall(...) std::rbegin(__VA_ARGS__), std::rend(__VA_ARGS__)
 #define pb push_back
 
-inline void YESNO(bool condition) { cout << (condition ? "YES\n" : "NO\n"); }
-inline void yesno(bool condition) { cout << (condition ? "yes\n" : "no\n"); }
-inline void YesNo(bool condition) { cout << (condition ? "Yes\n" : "No\n"); }
+inline void YESNO(bool condition) {
+  cout << (condition ? "YES\n" : "NO\n");
+}
+inline void yesno(bool condition) {
+  cout << (condition ? "yes\n" : "no\n");
+}
+inline void YesNo(bool condition) {
+  cout << (condition ? "Yes\n" : "No\n");
+}
 
 template <typename T>
 inline void print(const vector<T> &v, string s = " ") {
-  rep(i, v.size()) cout << v[i] << (i != (ll)v.size() - 1 ? s : "\n");
+  rep (i, v.size()) cout << v[i] << (i != (ll)v.size() - 1 ? s : "\n");
 }
 template <typename T, typename S>
 inline void print(const pair<T, S> &p) {
