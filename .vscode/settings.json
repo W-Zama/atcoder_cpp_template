@@ -1,8 +1,0 @@
-{
-  "files.associations": {
-    "*.pde": "pde",
-    "*.ejs": "html",
-    "vector": "cpp",
-    "iostream": "cpp"
-  }
-}
