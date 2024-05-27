@@ -91,12 +91,41 @@
       "const long long INF = 1LL << 60;",
       "",
       "int main() {",
-      "  ll N;",
-      "  cin >> N;",
+      "  $0",
       "",
       "  return 0;",
       "}"
     ],
     "description": "cpp_template"
+  },
+  "rep_i_macro": {
+    "prefix": "repi",
+    "body": ["rep (i, $1) {", "  $0", "}"],
+    "description": "rep_macro"
+  },
+  "rep_j_macro": {
+    "prefix": "repj",
+    "body": ["rep (j, $1) {", "  $0", "}"],
+    "description": "rep_macro"
+  },
+  "rep_k_macro": {
+    "prefix": "repj",
+    "body": ["rep (k, $1) {", "  $0", "}"],
+    "description": "rep_macro"
+  },
+  "cin1": {
+    "prefix": "cin1",
+    "body": ["cin >> $1;"],
+    "description": "cin1"
+  },
+  "cin2": {
+    "prefix": "cin2",
+    "body": ["cin >> $1 >> $2;"],
+    "description": "cin2"
+  },
+  "cin3": {
+    "prefix": "cin3",
+    "body": ["cin >> $1 >> $2 >> $3;"],
+    "description": "cin3"
   }
 }
