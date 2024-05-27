@@ -10,28 +10,12 @@ VSCode などでスニペット登録しておけば，すぐに呼び出せま�
 ```txt
 .
 ├── README.md
-├── atcoder_cli (AtCoder CLI用)
-│   └── cpp
-│       ├── main.cpp
-│       └── template.json
 └── vscode_snippet (VSCode用)
+    ├── cpp.json (VSCodeのスニペット設定ファイル)
     ├── make_template_json (特定のcppファイルからtemplate.jsonに記述するためのファイルを出力するプログラム)
     │   ├── README.md
     │   ├── input.cpp
     │   ├── make_template_json.py
     │   └── output.json
-    ├── template.cpp
-    └── template.json
+    └── template.cpp (実際のｃppテンプレート)
 ```
-
-## 備忘録
-
-### atcoder-cli のテンプレート設定
-
-以下のように入力し，設定ファイルのあるディレクトリへ移動する．
-
-```bash
-cd `acc config-dir`
-```
-
-移動後，`cpp/`の中の`main.cpp`にテンプレートを記述する．
