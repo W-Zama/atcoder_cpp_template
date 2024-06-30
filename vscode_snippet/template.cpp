@@ -1,6 +1,6 @@
 /**
  * author: Zama
- * created: 2024.05.28 08:24:04
+ * created: 2024.07.01 00:37:08
  **/
 
 #include <bits/stdc++.h>
@@ -30,8 +30,9 @@ using vvll = vector<vll>;
 using vs = vector<string>;
 using pii = pair<int, int>;
 using pllll = pair<ll, ll>;
-// using mint = modint1000000007;
+using mint = modint1000000007;
 // using mint = modint998244353;
+using vm = vector<mint>;
 
 #define OVERLOAD_REP(_1, _2, _3, name, ...) name
 #define REP1(i, n) for (auto i = std::decay_t<decltype(n)>{}; (i) < (n); ++(i))
