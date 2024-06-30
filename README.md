@@ -9,9 +9,11 @@ VSCode などでスニペット登録しておけば，すぐに呼び出せま�
 
 ```txt
 .
+├── .clang-format (clang-formatの設定ファイル)
+├── .gitignore
 ├── README.md
-└── vscode_snippet (VSCode用)
-    ├── cpp.json (VSCodeのスニペット設定ファイル)
+└── vscode_snippet
+    ├── cpp.json (VSCodeスニペット設定ファイル用)
     ├── make_template_json (特定のcppファイルからtemplate.jsonに記述するためのファイルを出力するプログラム)
     │   ├── README.md
     │   ├── input.cpp
